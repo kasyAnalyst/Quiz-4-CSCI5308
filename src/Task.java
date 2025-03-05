@@ -40,7 +40,7 @@ public class Task {
     }
 
     public String getStatus() {
-        return status; // ✅ This should return only the status, nothing else
+        return status;
     }
 
 

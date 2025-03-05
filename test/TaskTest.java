@@ -30,10 +30,10 @@ class TaskTest {
 
     @Test
     void testUpdateStatusValid() {
+        Task task = new Task("Test Task", LocalDateTime.now().plusDays(1));
         task.updateStatus("In Progress");
-        assertEquals("In Progress", task.getStatus(), "Task status should be updated");
+        assertEquals("In Progress", task.getStatus(), "In Progress");
     }
-
 
     @Test
     void testUpdateStatusInvalid() {
